@@ -1,0 +1,11 @@
+[Unit]
+Description=this is a weather service that displays the current weather for the day
+
+[Service]
+Type=simple
+ExecStart=/home/documents/currentweather
+WorkingDirectory=/home/documents
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
